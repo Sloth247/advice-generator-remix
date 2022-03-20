@@ -33,6 +33,7 @@ Users should be able to:
 ![](./public/images/advice-generator-desktop.png)
 
 **Mobile View (375px wide)**
+
 ![](./public/images/advice-generator-mobile.png)
 
 ### Links
