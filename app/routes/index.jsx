@@ -21,17 +21,11 @@ export default function Home() {
       <main className="main fade-in-fwd">
         <h1 className="main__title">Advice #{data.slip.id}</h1>
         <p className="main__advice">"{data.slip.advice}"</p>
-        <picture className="main__divider-img">
-          <source
-            srcSet={dividerDesktop}
-            media="(min-width: 30rem)"
-            alt=""
-            aria-hidden="true"
-          />
-          <img src={dividerMobile} alt="" aria-hidden="true" />
+        <picture className="main__divider-img" aria-hidden="true">
+          <source srcSet={dividerDesktop} media="(min-width: 30rem)" alt="" />
+          <img src={dividerMobile} alt="" />
         </picture>
         <button className="main__dice-button" onClick={handleClick}>
-          <div className="main__dice-outer"></div>
           <img
             src={dice}
             alt="shuffle advice slip"
