@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className="main__title">Advice #{data.slip.id}</h1>
         <p className="main__advice">"{data.slip.advice}"</p>
         <picture className="main__divider-img" aria-hidden="true">
-          <source srcSet={dividerDesktop} media="(min-width: 30rem)" alt="" />
+          <source srcSet={dividerDesktop} media="(min-width: 30rem)" />
           <img src={dividerMobile} alt="" />
         </picture>
         <button className="main__dice-button" onClick={handleClick}>
